@@ -1,0 +1,1 @@
+This bug occurs when using the Expo DocumentPicker API on Android.  The picker opens correctly, allowing the user to select a file. However, after selecting a file, the promise returned by DocumentPicker.getDocumentAsync() never resolves, leaving the application in a hanging state. This is inconsistent with the behavior on iOS, where the promise resolves as expected.
